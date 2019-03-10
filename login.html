@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div class="show-login-btn"><i class="fas fa-sign-in-alt"></i> Show Login</div>
+    <div class="login-box">
+      <div class="hide-login-btn"><i class="fas fa-times"></i></div>
+
+<form class="login-form" action="index.html" method="post">
+
+  <h1>Welcome</h1>
+  <input type="text" class="txtb"name="" placeholder="Username" value="">
+  <input type="password" class="txtb" name="" placeholder="Password" value="">
+  <input type="submit" class="loginbutton" name="" value="Login">
+</form>
+
+    </div>
+<script type="text/javascript">
+  $(".show-login-btn").on("click",function(){
+    $(".login-box").toggleClass("showed");
+  });
+</script>
+
+  </body>
+</html>

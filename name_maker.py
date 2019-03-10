@@ -81,34 +81,37 @@ def rand_int(x1,x2):
     r = int( int(x1) + random()*(int(x2)-int(x1)) )
     return r
 
-def make_name():
-    # Determine name length.
-    lmin = 3 # Minimum length.
-    lmax = 10 # Maximum length.
-    name_length = rand_int(lmin,lmax)
-    
-    # Initialize string.
-    my_name = ""
-    
-    prev_vowel = False # Was the previous letter a vowel?
-    prev_consonant = False # Was the previous letter a consonant?
-    prev2_vowel = False # Were the previous 2 letters vowels?
-    prev2_consonant = False # Were the previous 2 letters consonants?
-    prev_num = 0 # Number of the previous letter.
-    # Generate letters for name.
-    for i in range(0,name_length):
-        if (i == 0):
-            a = alphabet[rand_int(0,25)]
-            my_name = my_name + a.upperchar
-        else:
-            a = get_letter(prev_num,prev2_vowel,prev2_consonant)
-            my_name = my_name + a.lowerchar
-        prev2_vowel = (a.is_vowel and prev_vowel)
-        prev2_consonant = (a.is_consonant and prev_consonant)
-        prev_vowel = a.is_vowel
-        prev_consonant = a.is_consonant
-        prev_num = a.num
-    return my_name
+def make_name(num):
+    list_names = []
+    for i in range(num):
+        # Determine name length.
+        lmin = 3 # Minimum length.
+        lmax = 10 # Maximum length.
+        name_length = rand_int(lmin,lmax)
+        
+        # Initialize string.
+        my_name = ""
+        
+        prev_vowel = False # Was the previous letter a vowel?
+        prev_consonant = False # Was the previous letter a consonant?
+        prev2_vowel = False # Were the previous 2 letters vowels?
+        prev2_consonant = False # Were the previous 2 letters consonants?
+        prev_num = 0 # Number of the previous letter.
+        # Generate letters for name.
+        for i in range(0,name_length):
+            if (i == 0):
+                a = alphabet[rand_int(0,25)]
+                my_name = my_name + a.upperchar
+            else:
+                a = get_letter(prev_num,prev2_vowel,prev2_consonant)
+                my_name = my_name + a.lowerchar
+            prev2_vowel = (a.is_vowel and prev_vowel)
+            prev2_consonant = (a.is_consonant and prev_consonant)
+            prev_vowel = a.is_vowel
+            prev_consonant = a.is_consonant
+            prev_num = a.num
+        list_names.append(my_name)
+    return list_names
         
         
 def get_letter(prev_num,need_consonant,need_vowel): 
@@ -134,8 +137,8 @@ def pick_letter(i):
             return alphabet[j]
     print("problem!") # Code *shouldn't* reach this point.
     return alphabet(25)
-for i in range(20):       
-    name1 = make_name()
-    print(name1)
+
+if __name__ == "__main__":
+    print(make_name(10))
    
         

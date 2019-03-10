@@ -1,24 +1,26 @@
-import keras 
-import pandas as pd
 import numpy as np
 import random
-import keras
 import pickle
 import re
-
-
+import os
+import sys
+stderr = sys.stderr
+sys.stderr = open(os.devnull, 'w')
+import keras
+sys.stderr = stderr
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 maxlen = 10
 
 
-with open('../ML model/text_data.txt', 'rb') as fn:
+with open('./ML model/text_data.txt', 'rb') as fn:
     text = fn.read()
     text = text.decode()
 
 chars = sorted(list(set(text)))
 
-with open('../ML model/char_indices.pickle', 'rb') as picklein:
+with open('./ML model/char_indices.pickle', 'rb') as picklein:
     char_indices = pickle.load(picklein)
-with open('../ML model/indices_char.pickle', 'rb') as picklein:
+with open('./ML model/indices_char.pickle', 'rb') as picklein:
     indices_char = pickle.load(picklein)
 
 
@@ -59,9 +61,10 @@ def generator(num):
     return names
 
 
-model = keras.models.load_model('../ML model/modelForNames.h5')
+model = keras.models.load_model('./ML model/modelForNames.h5')
 
 if __name__ == "__main__":
+    # Add . in all the paths if this part is executed.
     names = generator(20)
     for i in names:
         print(i)

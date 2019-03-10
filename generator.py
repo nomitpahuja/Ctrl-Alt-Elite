@@ -1,6 +1,5 @@
 from name_maker import make_name
 import sys
-sys.path.insert(0, '/home/ankit/Desktop/python/Hackgrid/new files/Ctrl-Alt-Elite/scripts/')
 from MLGen import generator
 
 def giveNames():

@@ -6,26 +6,26 @@
 	background-image: linear-gradient(to right, #f1c40f , #d35400); /* Standard syntax (must be last) */
 }
 .name{
-	position : fixed;
-	top : 227px;
-	left : 496px;
+	position : absolute;
+	top : 30%;
+	left : 33%;
 	font-family: 'Montserrat', sans-serif;
 	font-weight : bold;
 	font-size : 60px;
 	color: #434C58;
 }
 .search-box {
-	position : fixed;
-	border: 0px;
-	top : 357.3px;
-	left : 469px;
+	position : absolute;
+	border : 0px;
+	top : 48%;
+	left : 30%;
 	background : #FFFFFF;
 	height : 60.46px;
 	width : 598.01px;	
 	border-radius : 50px;
 }
 .search-txt {
-	position : relative;
+	position : absolute;
 	left : 27.5px;
 	top : 17px;
 	font-family: 'Montserrat', sans-serif;
@@ -35,6 +35,8 @@
 	outline : none;
 	float : left;
 	padding : 0px;
+	min-width : 150px;
+	max-width : 510px;
 }
 .search-icon {
 	position : absolute;
@@ -43,9 +45,9 @@
 	font-size : 18.69px;
 }
 .search-button {
-	position : fixed;
-	left : 592px;
-	top : 463px;
+	position : absolute;
+	left : 38.5%;
+	top : 62%;
 	background: #434C58;
 	float : right;
 	width : 351.74px;

@@ -6,56 +6,57 @@
 	background-image: linear-gradient(to right, #f1c40f , #d35400); /* Standard syntax (must be last) */
 }
 .name{
-	position : fixed;
-	top : 227px;
-	left : 496px;
+	position : absolute;
+	top : 30%;
+	left : 33%;
 	font-family: 'Montserrat', sans-serif;
 	font-weight : bold;
-	font-size : 60px;
+	font-size : 4vw;
 	color: #434C58;
 }
 .search-box {
-	position : fixed;
-	border: 0px;
-	top : 357.3px;
-	left : 469px;
+	position : absolute;
+	border : 0px;
+	top : 48%;
+	left : 30%;
 	background : #FFFFFF;
-	height : 60.46px;
-	width : 598.01px;	
+	height : 8%;
+	width : 40%;
 	border-radius : 50px;
 }
 .search-txt {
-	position : relative;
-	left : 27.5px;
-	top : 17px;
+	position : absolute;
+	left : 5%;
+	top : 25%;
 	font-family: 'Montserrat', sans-serif;
-	font-size : 21px;
+	font-size : 2.8vh;
 	border : none;
 	background : none;
 	outline : none;
 	float : left;
 	padding : 0px;
+	max-width : 68vh;
 }
 .search-icon {
 	position : absolute;
-	right : 27.5px;
-	top : 20.9px;
-	font-size : 18.69px;
+	right : 5%;
+	top : 25%;
+	font-size : 3vh;
 }
 .search-button {
-	position : fixed;
-	left : 592px;
-	top : 463px;
+	position : absolute;
+	left : 38.5%;
+	top : 62%;
 	background: #434C58;
 	float : right;
-	width : 351.74px;
-	height : 44.62px;
+	width : 46.9vh;
+	height : 5.95vh;
 	border-radius : 2px;
 	display : flex;
 	justify-content : center;
 	align-items : center;
 	font-family: 'Montserrat', sans-serif;
-	font-size : 20px;
+	font-size : 2.7vh;
 	border : none;
 	color : #FFFFFF;
 }

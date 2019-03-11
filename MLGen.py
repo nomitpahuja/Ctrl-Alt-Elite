@@ -17,7 +17,6 @@ with open('./ML model/text_data.txt', 'rb') as fn:
     text = text.decode()
 
 chars = sorted(list(set(text)))
-print(chars)
 
 with open('./ML model/char_indices.pickle', 'rb') as picklein:
     char_indices = pickle.load(picklein)

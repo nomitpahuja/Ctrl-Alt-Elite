@@ -1,0 +1,62 @@
+#grad1 {
+	margin : 0px;
+	padding : 0px;
+	height: 200px;
+	background-color: red; /* For browsers that do not support gradients */
+	background-image: linear-gradient(to right, #f1c40f , #d35400); /* Standard syntax (must be last) */
+}
+.name{
+	position : absolute;
+	top : 30%;
+	left : 33%;
+	font-family: 'Montserrat', sans-serif;
+	font-weight : bold;
+	font-size : 4vw;
+	color: #434C58;
+}
+.search-box {
+	position : absolute;
+	border : 0px;
+	top : 5%;
+	left : 5%;
+	background :#FFFFFF;
+	height : 8%;
+	width : 60%;
+	border-radius : 50px;
+}
+.search-txt {
+	position : absolute;
+	left : 5%;
+	top : 25%;
+	font-family: 'Montserrat', sans-serif;
+	font-size : 2.8vh;
+	border : none;
+	background : none;
+	outline : none;
+	float : left;
+	padding : 0px;
+	max-width : 68vh;
+}
+.search-icon {
+	position : absolute;
+	right : 5%;
+	top : 25%;
+	font-size : 3vh;
+}
+.search-button {
+	position : absolute;
+	left : 69%;
+	top : 5%;
+	background: #434C58;
+	float : right;
+	width : 30%;
+	height : 8%;
+	border-radius : 50px;
+	display : flex;
+	justify-content : center;
+	align-items : center;
+	font-family: 'Montserrat', sans-serif;
+	font-size : 2.7vh;
+	border : none;
+	color : #FFFFFF;
+}

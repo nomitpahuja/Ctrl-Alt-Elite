@@ -57,22 +57,22 @@ section{
 }
 .col:nth-child(1) .card
  {
-  background: linear-gradient(-45deg,#f403d1,#64b596);
+  background: #1abc9c;
   }
 .col:nth-child(2) .card,{
-    background: linear-gradient(-45deg,#ffec61,#f321d7);
+    background: #2ecc71;
     }
 .col:nth-child(3) .card,
 .col:nth-child(3) .card .title .fa{
-          background: linear-gradient(-45deg,#3498db,#ecf0f1);
+          background: #3498db ;
       }
 .col:nth-child(4) .card,
 .col:nth-child(4) .card .title .fa {
-      background: linear-gradient(-45deg,#00a8ff,#e84118);
+      background:  #16a085;
   }
   .col:nth-child(5) .card,
   .col:nth-child(5) .card .title .fa{
-        background: linear-gradient(-45deg,#fbc531,#40739e);
+        background: #27ae60;
     }
     a:link {
       color: black;
